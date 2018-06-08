@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Parity Public Wallet Deprecation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <script src="./accounts.js" defer></script>
+
+    <div class="container">
+
+        <h1>Parity Public Wallet Deprecation</h1>
+
+        <p>This service has been deprecated and can not be used anymore. This page now allows to access and download any JSON/UTC keystore file used by wallet.parity.io and stored in your browser. This JSON/UTC keystore file is encrypted with a password defined upon account creation. It contains the encrypted account private key, it is therefore very important not to transfer it to nontrusted websites. This file, together with the right password, allows accessing an account on Parity client or any compatible 3rd party application. Below are step by step tutorials for <a href="#view-and-use-your-account-on-mycrypto-desktop-application">MyCrypto Desktop application</a>, <a href="#view-and-use-your-account-on-metamask-beta">Metamask</a> or <a href="#view-and-use-your-account-on-mycrypto">MyCrypto web application</a>. If you forgot the password to open an account but have the recovery phrase (given at the account creation), you can recover your account using <a href="https://wiki.parity.io/Backing-up-&-Restoring.html" target="_blank">Parity Ethereum client</a>.</p>
+
+        <p>Here are the accounts found on your browser, click on "Download" to store the JSON/UTC keystore file on your computer:</p>
+        <div id="accounts"></div>
+
+        <h2 id="view-and-use-your-account-on-mycrypto-desktop-application">View and use your account on MyCrypto Desktop application</h2>
+        <ul>
+            <li>Visit <a href="https://download.mycrypto.com/">MyCrypto download page</a> and download the application for your platform.</li>
+            <li>Make sure to read and understand the warning.</li>
+            <li>Click on <code>Keystore File</code> button.</li>
+            <li>Click on <code>Select wallet file</code> and select the desired file.</li>
+            <li>Enter the password corresponding to this account and click <code>unlock</code>.</li>
+            <li>You can now see the balance of your account and send Ether from it.</li>
+        </ul>
+        <p><img src="images/public-wallet-recovery-mycrypto-desktop-app.gif" alt="MyCrypto desktop app"></p>
+
+        <h2 id="view-and-use-your-account-on-metamask-beta">View and use your account on Metamask beta</h2>
+        <p>Metamsk beta allows using an account from a JSON/UTC file. Here is how to proceed:</p>
+        <ul>
+            <li>If you haven&#39;t done so already download <a href="https://metamask.io/">Metamask</a> on your favourite browser.</li>
+            <li>If you haven&#39;t any yet, create a dummy account to be able to use the beta version of Metamask.</li>
+            <li>In the hamburger menu from the top right corner, select <code>Try beta!</code>.</li>
+            <li>Using Metamask in full-screen mode is more convenient, click on the arrow icon at the top right to switch to full screen.</li>
+            <li>Slick on the account image at the top right and select <code>Import account</code>.</li>
+            <li>Select type <code>JSON file</code>.</li>
+            <li>Select the previously downloaded JSON/UTC file and click <code>Import</code>.</li>
+        </ul>
+        <p><img src="images/public-wallet-recovery-memamask-beta.gif" alt="Metamask recovery JSON"></p>
+
+        <h2 id="view-and-use-your-account-on-mycrypto">View and use your account on MyCrypto</h2>
+        <ul>
+            <li>Visit <a href="https://mycrypto.com/account">MyCrypto</a> and click on <code>Keystore File</code> button.</li>
+            <li>Make sure to read and accept the warning then click on <code>continue</code>.</li>
+            <li>Click on <code>select wallet file</code> and select the desired file.</li>
+            <li>Enter the password corresponding to this account and click <code>unlock</code>.</li>
+            <li>You can now see the balance of your account and send Ether from it.</li>
+        </ul>
+        <p><img src="images/public-wallet-recovery-mycrypto.gif" alt="MyCrypto Keystore file"></p>
+    </div>
+
+</body>
+</html>

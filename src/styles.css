@@ -1,0 +1,68 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    font-weight: bold;
+    color: #44a;
+}
+
+code {
+    font-family: monospace;
+    background: #dfdfdf;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 80vw;
+    text-align: left;
+}
+
+.container img {
+    max-width: 80vw;
+}
+
+.no-accounts {
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+}
+
+.account {
+    position: relative;
+    padding: .5em;
+}
+
+.account:hover {
+    background: #ffb;
+}
+
+.account .address {
+    font-family: monospace;
+    padding-right: 2em;
+}
+
+.account .name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.account .download {
+    position: absolute;
+    right: 0.5em;
+}
+
+.account .download.disabled {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #888;
+}
